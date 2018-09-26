@@ -1,5 +1,8 @@
-Maiara Lange
-# Exercício Sistema de Partículas
+Maiara Lange, Isaque Hoffmeister
+# Trabalho GA
+
+
+# REDEFINIR
 
 1. Definir os atributos das partículas que você desejar, sendo permitida pelo menos 3 variações nesses atributos (como cor e formas diferentes):
   As variações de atributos podem ser testadas clicando 'A', 'S', 'D'. O primeiro irá prover uma partícula em formato de cilindro, o segundo, formato de cubo e, o terceiro, esfera. O valor default, que inicia a aplicação, é a esfera.
