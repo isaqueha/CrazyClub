@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 800b504d1905cf3478b8e874d432935e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Belt
+    100004: Belt Buckle
+    100006: Belt.Collision
+    100008: Camera
+    100010: Cloak
+    100012: Eye Left
+    100014: Eye Right
+    100016: EyePosition
+    100018: Mesh
+    100020: Pants
+    100022: Staff
+    100024: Sun
+    100026: Sun.001
+    100028: Sun.002
+    100030: vest
+    100032: Yoda
+    400000: //RootNode
+    400002: Belt
+    400004: Belt Buckle
+    400006: Belt.Collision
+    400008: Camera
+    400010: Cloak
+    400012: Eye Left
+    400014: Eye Right
+    400016: EyePosition
+    400018: Mesh
+    400020: Pants
+    400022: Staff
+    400024: Sun
+    400026: Sun.001
+    400028: Sun.002
+    400030: vest
+    400032: Yoda
+    2000000: Camera
+    2100000: Eyeball
+    2100002: pupil
+    2100004: Iris
+    2100006: cornea
+    2100008: Staff
+    2100010: Inner Cloak Cycles
+    2100012: Outer Cloak
+    2100014: Yoda's Body
+    2100016: Yoda's Hands
+    2100018: Nails
+    2100020: Yoda's Head
+    2100022: Yoda's Ears
+    2100024: Teeth
+    2100026: leather_darkbrown_cracked
+    2100028: BrassOld
+    2300000: Belt
+    2300002: Belt Buckle
+    2300004: Belt.Collision
+    2300006: Cloak
+    2300008: Eye Left
+    2300010: Eye Right
+    2300012: Mesh
+    2300014: Pants
+    2300016: Staff
+    2300018: vest
+    2300020: Yoda
+    3300000: Belt
+    3300002: Belt Buckle
+    3300004: Belt.Collision
+    3300006: Cloak
+    3300008: Eye Left
+    3300010: Eye Right
+    3300012: Mesh
+    3300014: Pants
+    3300016: Staff
+    3300018: vest
+    3300020: Yoda
+    4300000: Mesh
+    4300002: Eye Right
+    4300004: Eye Left
+    4300006: Staff
+    4300008: vest
+    4300010: Cloak
+    4300012: Yoda
+    4300014: Pants
+    4300016: Belt.Collision
+    4300018: Belt Buckle
+    4300020: Belt
+    10800000: Sun
+    10800002: Sun.001
+    10800004: Sun.002
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
