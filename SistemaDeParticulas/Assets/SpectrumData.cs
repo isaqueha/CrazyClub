@@ -3,9 +3,18 @@
 [RequireComponent(typeof(AudioSource))]
 public class SpectrumData : MonoBehaviour
 {
+    Vector3[] originalVertices;
+    Mesh gameObjectMesh;
+
+    private void Start() {
+        gameObjectMesh = gameObject.GetComponent<MeshFilter>().mesh;
+        originalVertices = gameObjectMesh.vertices;        
+    }
+
     void Update() {
         var spectrum = getSpectrumFromAudio();
-        changeGameObjectToNewPosition(spectrum);
+        var newVertices = deformOriginalVertices(spectrum);
+        gameObjectMesh.vertices = newVertices;
     }
 
     float[] getSpectrumFromAudio() {
@@ -14,8 +23,20 @@ public class SpectrumData : MonoBehaviour
         return spectrum;
     }
 
-    void changeGameObjectToNewPosition(float[] spectrum) {
-        var newPosition = new Vector3(spectrum[0] * 50, spectrum[32] * 50, spectrum[63] * 50);
-        gameObject.transform.position = newPosition;
+    Vector3[] deformOriginalVertices(float[] spectrum) {
+        var deformedVertices = new Vector3[originalVertices.Length];
+        var counter = 0;
+        for (int i = 0; i < originalVertices.Length; i++) {
+            counter++;
+            float x = originalVertices[i].x;
+            float y = originalVertices[i].y;
+            float z = originalVertices[i].z;
+            if (counter == 20) {
+                x = x * spectrum[0] * 10;
+                counter = 0;
+            }
+            deformedVertices[i] = new Vector3(x, y, z);
+        }
+        return deformedVertices;
     }
 }
