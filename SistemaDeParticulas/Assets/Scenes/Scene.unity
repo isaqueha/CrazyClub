@@ -286,6 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 1000
   forceOffset: 10
+  springForce: 20
 --- !u!114 &840278025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,7 +312,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

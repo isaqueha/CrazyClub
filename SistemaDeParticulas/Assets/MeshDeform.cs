@@ -6,9 +6,10 @@ public class MeshDeform : MonoBehaviour {
     Mesh deformedMesh;
     Vector3[] originalVertices, displacedVertices;
     Vector3[] vertexForces;
-    public float force = 100f;
-    public float forceOffset = 10f;
+    public float force = 1000f;
+    public float forceOffset = 5f;
     public float springForce = 20f;
+    public float damping = 5f;
 
     void Start() {
         deformedMesh = GetComponent<MeshFilter>().mesh;
@@ -47,6 +48,10 @@ public class MeshDeform : MonoBehaviour {
 
     void UpdateVertex(int i) {
         Vector3 displaceForce = vertexForces[i];
+        Vector3 displacement = displacedVertices[i] - originalVertices[i];
+        displaceForce -= displacement * springForce * Time.deltaTime;
+        displaceForce *= 1f - damping * Time.deltaTime;
+        vertexForces[i] = displaceForce;
         displacedVertices[i] += displaceForce;
     }
 }

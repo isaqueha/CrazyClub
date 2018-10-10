@@ -21,7 +21,7 @@ public class SpectrumData : MonoBehaviour
             for (int i = 0; i < deformedVertices; i++) {
                 int rand = (int) (Random.value * originalVertices.Length);
                 Vector3 point = originalVertices[rand];
-                deform.DeformPoint(point, spectrum[0]);
+                deform.DeformPoint(point, spectrum[2]);
             }
         }
     }
