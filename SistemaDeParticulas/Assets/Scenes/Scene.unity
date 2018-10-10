@@ -281,11 +281,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 840278023}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be607a3050f124b7aa040210bfa97c34, type: 3}
+  m_Script: {fileID: 11500000, guid: bad5e0ad2e57ffc4da2256ac633793e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 10
-  forceOffset: 0.1
+  force: 1000
+  forceOffset: 10
 --- !u!114 &840278025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e325807a3ff7204498c0655df984231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deformedVertices: 1
 --- !u!82 &840278028
 AudioSource:
   m_ObjectHideFlags: 0
@@ -392,17 +393,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &840278029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 840278023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5893a1b22e1124140b5e910f5754c937, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1208419604
 Prefab:
   m_ObjectHideFlags: 0

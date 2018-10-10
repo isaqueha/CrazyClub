@@ -5,6 +5,7 @@ public class SpectrumData : MonoBehaviour
 {
     Vector3[] originalVertices;
     Mesh gameObjectMesh;
+    public int deformedVertices = 4;
 
     private void Start() {
         gameObjectMesh = gameObject.GetComponent<MeshFilter>().mesh;
@@ -13,8 +14,16 @@ public class SpectrumData : MonoBehaviour
 
     void Update() {
         var spectrum = getSpectrumFromAudio();
-        var newVertices = deformOriginalVertices(spectrum);
-        gameObjectMesh.vertices = newVertices;
+        // var newVertices = deformOriginalVertices(spectrum);
+        // gameObjectMesh.vertices = newVertices;
+        MeshDeform deform = gameObject.GetComponent<MeshDeform>();
+        if (deform) {
+            for (int i = 0; i < deformedVertices; i++) {
+                int rand = (int) (Random.value * originalVertices.Length);
+                Vector3 point = originalVertices[rand];
+                deform.DeformPoint(point, spectrum[0]);
+            }
+        }
     }
 
     float[] getSpectrumFromAudio() {
