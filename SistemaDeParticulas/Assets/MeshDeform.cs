@@ -7,9 +7,9 @@ public class MeshDeform : MonoBehaviour {
     Vector3[] originalVertices, displacedVertices;
     Vector3[] vertexForces;
     public float force = 1000f;
-    public float forceOffset = 5f;
-    public float springForce = 20f;
-    public float damping = 5f;
+    public float forceOffset = 25f;
+    public float springForce = 10f;
+    public float damping = 2f;
 
     void Start() {
         deformedMesh = GetComponent<MeshFilter>().mesh;
